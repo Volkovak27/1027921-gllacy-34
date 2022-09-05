@@ -3,10 +3,109 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="style/styles.css">
   </head>
   <body>
+<header class="page-header">
+  <div class="container">
+    <nav class="navigation-container">
+      <img class="logo" src="images/logo.svg" width="137" height="56" alt="Логотип сайта Глейси">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            Каталог
+          </a>
+        </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+            О компании
+            </a>
+          </li>
+        </ul>
+    <div class="botton-menu">
+        <ul class="info-list">
+          <li class="info-item"><a class="number-text" href=”tel:+78005558628”>+7 800 555-86-28</a></li>
+          <li class="info-item"><button class="list-button search" type="submit"></button></li>
+          <li class="info-item"><button class="list-button enter" type="submit">Вход</button></li>
+          <li class="info-item"><button class="list-button basket" type="submit">2 товара</button></li>
+        </ul>
+    </div>
+    </nav>
+  </div>
+</header>
+<main class="main-container main-index">
+  <div class="index-columns">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <!-- текст в слайде -->
+    <section class="services">
+      <h2 class="services-title">Нежный пломбир <br>с клубничным джемом</h2>
+     <p class="services-decription">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+     <button class="slid-button" type="submit">Заказать</button>
+    </section>
 
+    <!-- фото в слайде -->
+    <section class="gallery">
+      <h2 class="visually-hidden">Слайдер</h2>
+      <div class="slider">
+        <div class="slider-wrapper">
+          <img class="slider-image" src="images/ice_ream.svg" alt="Примеры работ." width="306" height="507">
+          <div class="slider-controls">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="pagination">
+    <ol class="slider-pagination">
+      <li class="slider-pagination-item">
+        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+          <span class="visually-hidden">1 фото</span>
+        </button>
+      </li>
+      <li class="slider-pagination-item">
+        <button class="slider-pagination-button" type="button">
+          <span class="visually-hidden">2 фото</span>
+        </button>
+      </li>
+      <li class="slider-pagination-item">
+        <button class="slider-pagination-button" type="button">
+          <span class="visually-hidden">3 фото</span>
+        </button>
+      </li>
+    </ol>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-tw" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-vk" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-instagram" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+</main>
+<footer class="page-footer">
+
+</footer>
   </body>
 </html>
