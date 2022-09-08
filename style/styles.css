@@ -24,6 +24,7 @@
 
 html{
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -232,7 +233,7 @@ body {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Inter';
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
@@ -269,7 +270,7 @@ body {
 .gallery-title {
   margin-top: 0;
   margin-bottom: 28px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Inter';
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -506,11 +507,22 @@ body {
 
 /*Карточки колонки*/
 
+.columns-container {
+  margin-bottom: 80px;
+}
+
+.columns-cards-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+
 .columns-title {
   width: 527px;
   height: 92px;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 107px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
@@ -518,4 +530,281 @@ body {
   line-height: 46px;
   text-align: center;
   color: #2D3440;
+}
+
+
+.columns-cards {
+  position: relative;
+  width: 270px;
+  height: 281px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.columns-cards-img {
+  position: relative;
+  left: 50px;
+  bottom: 48px;
+  filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
+
+}
+
+.columns-cards-title {
+  position: relative;
+  bottom: 50px;
+  width: 190px;
+  height: 24px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-align: center;
+}
+
+
+.columns-cards-text {
+  position: relative;
+  width: 190px;
+  height: 44px;
+  bottom: 42px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565C66;
+  text-align: center;
+}
+
+.columns-cards-price {
+  position: relative;
+  bottom: 22px;
+  left: 40px;
+  width: 85px;
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.columns-cars-btn {
+  position: relative;
+  bottom: 15px;
+  left: 106px;
+  width: 32px;
+  height: 32px;
+  background: #FF2F64;
+  border: none;
+  border-radius: 26px;
+  background-image: url('/images/cards-basket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*Секция с описанием магазина*/
+
+.store-container {
+  width: 1170px;
+  height: 480px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-image: url('/images/waffle-background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 16px;
+}
+
+.store-behind {
+  width: 1122px;
+  height: 432px;
+  margin: 0 auto;
+  position: relative;
+  top: 24px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.store-title {
+  width: 995px;
+  height: 92px;
+  margin: 0 auto;
+  padding: 56px 63px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+}
+
+.store-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 31px;
+  row-gap: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  list-style: none;
+}
+
+.store-item {
+  width: 505px;
+  height: 66px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.store-text {
+  margin: 0;
+  margin-left: 63px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.ice-icon {
+  background-image: url('/images/ice_ream_icon.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+
+.cow-icon {
+  background-image: url('/images/cow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+
+.leaf-icon {
+  background-image: url('/images/leaf-icon.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.thermometer-icon {
+  background-image: url('/images/thermometer-icon.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+
+/*Блок новости и подписки*/
+.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 86px;
+}
+
+.news-blok {
+  width: 570px;
+  height: 224px;
+  background-image: url('/images/ice-background.png');
+  background-repeat: no-repeat;
+  background-size: 640px;
+  background-position: left;
+  border-radius: 16px;
+}
+
+ .news-text {
+  margin: 0;
+  padding: 32px 0 12px 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+ .news-title {
+  width: 303px;
+  height: 92px;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  padding-left: 32px;
+ }
+
+.subscription-box {
+  width: 570px;
+  height: 224px;
+  background-image: url('/images/subscription-backgraund.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 16px;
+}
+
+
+.subscription-blok {
+  width: 558px;
+  height: 212px;
+  position: relative;
+  left: 6px;
+  top: 6px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.subscription-text {
+  width: 506px;
+  height: 66px;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  padding: 26px 26px 44px 26px;
+}
+
+.news-search {
+  width: 332px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  padding: 14px 16px;
+}
+
+.search-blok {
+  margin: 0;
+  padding: 0 18px 28px 26px;
 }
