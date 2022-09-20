@@ -95,7 +95,7 @@ body {
 }
 
 .navigation-list li {
-  margin: 0px 32px 0px 0px;
+  margin: 0 32px 0 0;
   list-style: none;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .info-list li {
-  margin: 0px 18px 0px 0px;
+  margin: 0 18px 0 0;
   list-style: none;
 }
 
@@ -285,12 +285,11 @@ body {
   line-height: 20px;
   text-align: center;
   color: #2D3440;
-  width: 139px;
-  height: 44px;
   background: #FCFCFC;
   background-clip: padding-box;
   border: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
+  padding: 12px 32px;
 }
 
 
@@ -429,12 +428,27 @@ body {
   height: 24px;
   margin: 0;
   padding: 0;
-  background-color: #FCFCFC;
-  border: none;
+  background-color: #FEAFC3;
+  background-clip: padding-box;
+  border: 2px solid rgba(252, 252, 252, 0.4);
   border-radius: 50%;
   cursor: pointer;
 }
 
+.telegram {
+  background-image: url('/images/telegram.svg');
+  background-position: center;
+}
+
+.vk {
+  background-image: url('/images/vk.svg');
+  background-position: center;
+}
+
+.youtube {
+  background-image: url('/images/youtube.svg');
+  background-position: center;
+}
 
 /*Карточки*/
 
@@ -483,7 +497,7 @@ body {
 .card-text {
   width: 328px;
   height: 66px;
-  margin: 0px 36px 28px 36px;
+  margin: 0 36px 28px 36px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -495,14 +509,12 @@ body {
 .image-box {
   position: relative;
   left: 62%;
-  bottom: 246px;
+  bottom: 254px;
 }
 
 
 .btn-card {
-  width: 176px;
-  height: 44px;
-  margin: 0px 36px 14px 36px;
+  margin: 0 36px 14px 36px;
 }
 
 /*Карточки колонки*/
@@ -545,7 +557,7 @@ body {
   position: relative;
   left: 50px;
   bottom: 48px;
-  filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
+  filter: drop-shadow(0 4px 12px rgba(45, 52, 64, 0.1));
 
 }
 
@@ -578,7 +590,7 @@ body {
   line-height: 22px;
   text-align: center;
   color: #565C66;
-  text-align: center;
+
 }
 
 .columns-cards-price {
@@ -807,4 +819,244 @@ body {
 .search-blok {
   margin: 0;
   padding: 0 18px 28px 26px;
+}
+
+.button {
+padding: 12px 32px;
+background: #FF2F64;
+background-clip: padding-box;
+border: 4px solid rgba(255, 47, 100, 0.3);
+box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+border-radius: 26px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #FCFCFC;
+}
+/*Блок доставки с фомрой заказа*/
+
+.delivery-container {
+  width: 1170px;
+  height: 534px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 80px;
+  background-image: url('/images/delivery-background.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: scaleX(-1);
+  border-radius: 16px;
+}
+
+.delivery-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: scaleX(-1);
+}
+
+.delivery-title {
+width: 356px;
+height: 92px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 46px;
+color: #2D3440;
+margin: 0;
+margin-left: 100px;
+margin-bottom: 24px;
+}
+
+.delivery-text {
+width: 371px;
+height: 88px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #565C66;
+margin: 0;
+margin-left: 100px;
+}
+
+.appointment {
+  width: 500px;
+  height: 406px;
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  margin: 64px 64px 64px 0;
+}
+
+
+.appointment-form {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 117px 287px;
+  grid-gap: 20px 16px;
+  margin-bottom: 32px;
+}
+
+.field {
+  box-sizing: border-box;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.appointment-form-address {
+  width: 420px;
+}
+
+.appointment-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+/* List */
+.appointment-info {
+width: 380px;
+height: 44px;
+margin: 40px 80px 32px 40px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #565C66;
+}
+
+/* Label */
+.form-label {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #2D3440;
+margin-bottom: 8px;
+}
+
+
+
+.button-appointment {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*Блок с контактами*/
+
+.contacts-container {
+  width: 1170px;
+  height: 492px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 80px;
+  background-image: url('/images/background-address.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 16px;
+}
+
+.contacts-block {
+  padding: 40px;
+}
+
+.contacts-box {
+  width: 343px;
+  height: 364px;
+  background: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  margin-left: 64px;
+}
+
+.contacts-address-text {
+width: 179px;
+height: 44px;
+margin: 0;
+padding: 0;
+margin-bottom: 12px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #565C66;
+}
+
+
+.contacts-address {
+width: 263px;
+height: 48px;
+margin: 0;
+padding: 0;
+margin-bottom: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #2D3440;
+}
+
+
+.contacts-text {
+width: 203px;
+height: 22px;
+margin: 0;
+padding: 0;
+margin-bottom: 12px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #565C66;
+}
+
+.contacts-address-phone {
+margin: 0;
+padding: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #2D3440;
+text-decoration: none;
+}
+
+.contacts-schedule {
+margin: 0;
+padding: 0;
+margin-bottom: 32px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #565C66;
 }
