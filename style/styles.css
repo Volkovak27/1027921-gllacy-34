@@ -1218,6 +1218,7 @@ cursor: pointer;
   background-image: url('/images/delivery-background.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
   transform: scaleX(-1);
   border-radius: 16px;
 }
