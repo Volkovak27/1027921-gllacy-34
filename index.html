@@ -29,9 +29,6 @@
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
-      <div class="popover-search">
-          <input class="popover-form popover-search-form" type="search" name="subscription" placeholder="Поиск по сайту">
-      </div>
       <li class="nav-item icon-background-search">
         <a class="nav-link navigation-link-icon" href="#">
           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -40,6 +37,9 @@
           Вход
         </a>
       </li>
+      <div class="popover-search">
+        <input class="popover-form popover-search-form" type="search" name="subscription" placeholder="Поиск по сайту">
+    </div>
       <div class="popover-user">
         <div class="popover-user-content">
           <h3 class="popover-user-title">Личный кабинет</h3>
@@ -69,8 +69,7 @@
         </a>
       </li>
       <span class="visually-hidden">Корзина</span>
-    </a>
-    <div class="popover">
+    <section class="popover">
         <div class="popover-content">
           <h3 class="popover-title">Корзина</h3>
         </div>
@@ -110,7 +109,7 @@
           <button class="button contacts-button botton-price" type="submit">Оформить заказ</button>
           <p class="popover-price-total">Итого: 790 ₽</p>
         </div>
-    </div>
+      </section>
     </ul>
   </nav>
 </header>
@@ -177,7 +176,6 @@
        </button>
      </li>
    </ol>
-  </div>
   </div>
   <section class="card-container">
     <h2 class="card-title">Заказывайте мороженое и получайте подарки!</h2>
@@ -256,6 +254,7 @@
           <li class="store-item thermometer-icon">
             <p class="store-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
           </li>
+        </ul>
     </div>
   </section>
   <section class="news-container">
@@ -310,7 +309,7 @@
     <div class="contacts-box">
       <div class="contacts-block">
        <p class="contacts-address-text">Адрес главного офиса и офлайн-магазина:</p>
-       <h4 class="contacts-address">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
+       <h4 class="contacts-address">наб. реки Карповки, <br>5 лит П, Санкт-Петербург</h4>
        <p class="contacts-text">Для заказов по телефону:</p>
        <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
        <p class="contacts-schedule">(с 10 до 20 ежедневно)</p>
@@ -371,22 +370,18 @@
       <h2 class="modal-title">Мы обязательно ответим вам!</h2>
       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="field-group">
-          <label class="visually-hidden" for="auth-login">Логин</label>
-          <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+          <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
+          <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Имя и фамилия">
         </p>
         <p class="field-group">
-          <label class="visually-hidden" for="auth-password">Пароль</label>
-          <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+          <label class="visually-hidden" for="auth-password">Имейл</label>
+          <input class="auth-form-field field" type="email" id="auth-email" name="auth-email" placeholder="email@example.com">
         </p>
-        <p class="field-group auth-form-user-options">
-          <label class="auth-form-checkbox control">
-            <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
-            <span class="control-mark"></span>
-            <span class="control-label">Запомнить меня</span>
-          </label>
-          <a class="auth-form-recovery" href="#">Забыл пароль</a>
+        <p class="field-text">
+          <label class="visually-hidden" for="auth-password">Текст</label>
+          <input class="auth-form-field field text-group" type="text" id="auth-text" name="auth-text" placeholder="В свободной форме">
         </p>
-        <button class="button auth-form-button" type="submit">Войти</button>
+        <button class="button auth-form-button" type="submit">Отправить</button>
       </form>
     </section>
   </div>
